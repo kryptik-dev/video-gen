@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  short-video-maker:
+    image: gyoridavid/short-video-maker:latest-tiny
+    container_name: short-video-maker
+    restart: unless-stopped
+    environment:
+      - LOG_LEVEL=debug
+      - PEXELS_API_KEY=${PEXELS_API_KEY}
+    ports:
+      - "3123:3123"
+    volumes:
+      - ./videos:/app/data/videos
+
+
+
+

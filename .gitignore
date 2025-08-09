@@ -1,0 +1,7 @@
+node_modules/
+youtube_oauth_token.json
+output/
+.env
+tmp_uploads/
+videos/
+
